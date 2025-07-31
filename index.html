@@ -4,22 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blog-CineFan - Inicio</title>
-    <link rel="stylesheet" href="assets/css/inicio.css">
-    <link rel="stylesheet" href="assets/css/styles.css">
     <link rel="icon" href="assets/img/favicon.ico">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/inicio.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+
 
 </head>
 <body>
 
-    <main>
-        <nav class="navbar">
+    <nav class="navbar">
             <div class="titulo">Blog-Cinefan</div>
              <ul class="nav-links">
                 <li><a href="/index.html">Inicio</a></li>
                 <li><a href="/about.html">Sobre Nosotros</a></li>
                 <li><a href="/contact.html">Contacto</a></li>
              </ul>
-    </main>
+        </nav>
 
     <header class="header">
         <div class="container">
@@ -29,40 +31,184 @@
     </header>
 
     <main class="main-content container">
-        <section class="posts">
-            <article class="post">
-                <div class="sec-image">
-                    <img class="post__image" src="./assets/img/renacer-F.jpg" alt="Imagen del renacer de la ciencia ficción">
-                </div>
-                <div class="post__content">
-                    <h2 class="post__title">La Ciencia Ficción Vuelve con Fuerza</h2>
-                    <p class="post__excerpt">Las películas de ciencia ficción están de moda otra vez. Con nuevas tecnologías y efectos especiales increíbles, los directores nos llevan a mundos fantásticos que antes solo podíamos imaginar. Descubre las últimas joyas de este género.</p>
-                    <a href="#" class="post__read-more">Leer más...</a>
-                </div>
-            </article>
+        <header class="bg-dark text-white text-center py-5">
+  <div class="container">
+    <h1 class="display-3 fw-bold">Bienvenido a CineFan</h1>
+    <p class="lead">Reseñas, noticias y curiosidades del cine que no te puedes perder</p>
+    <a href="#posts" class="btn btn-danger btn-lg mt-3">Explorar publicaciones</a>
+  </div>
+</header>
 
-            <article class="post">
-                <div class="sec-image">
-                    <img class="post__image" src="./assets/img/renacer-F.jpg" alt="Imagen del renacer de la ciencia ficción">
-                </div>
-                <div class="post__content">
-                    <h2 class="post__title">Películas Clásicas que No Pasan de Moda</h2>
-                    <p class="post__excerpt">Hay películas que, sin importar cuántos años pasen, siguen siendo obras maestras. Te recomendamos algunos clásicos del cine que tienes que ver al menos una vez en la vida. Prepara las palomitas y disfruta.</p>
-                    <a href="#" class="post__read-more">Leer más...</a>
-                </div>
-            </article>
+<!-- Película destacada -->
+<section class="container my-5">
+  <h2 class="mb-4 text-center">🎬 Película destacada de la semana</h2>
+  <div class="row align-items-center">
+    <div class="col-md-6">
+      <img src="./assets/img/oppe.jpg" alt="Película destacada" class="img-fluid rounded">
+    </div>
+    <div class="col-md-6">
+      <h3>Oppenheimer: Ciencia, moral y destrucción</h3>
+      <p>Una obra maestra de Christopher Nolan que explora los dilemas morales del creador de la bomba atómica. Con actuaciones brillantes y una dirección impecable, es un viaje emocional imperdible.</p>
+      <a href="#" class="btn btn-outline-primary">Leer reseña completa</a>
+    </div>
+  </div>
+</section>
 
-            <article class="post">
-                <div class="sec-image">
-                    <img class="post__image" src="./assets/img/renacer-F.jpg" alt="Imagen del renacer de la ciencia ficción">
-                </div>
-                <div class="post__content">
-                    <h2 class="post__title">El Encanto del Cine Independiente</h2>
-                    <p class="post__excerpt">Lejos de los grandes estudios de Hollywood, el cine independiente nos cuenta historias únicas y personales. Anímate a explorar películas diferentes, con directores atrevidos y propuestas originales que te sorprenderán.</p>
-                    <a href="#" class="post__read-more">Leer más...</a>
-                </div>
-            </article>
-        </section>
+<!-- Categorías de películas -->
+<section class="container my-5">
+  <h2 class="mb-4 text-center">🎞️ Explora por Género</h2>
+  <div class="d-flex flex-wrap justify-content-center gap-3">
+    <button class="btn btn-outline-secondary">Acción</button>
+    <button class="btn btn-outline-secondary">Comedia</button>
+    <button class="btn btn-outline-secondary">Drama</button>
+    <button class="btn btn-outline-secondary">Terror</button>
+    <button class="btn btn-outline-secondary">Ciencia Ficción</button>
+    <button class="btn btn-outline-secondary">Romance</button>
+    <button class="btn btn-outline-secondary">Animación</button>
+  </div>
+</section>
+
+<!-- Carrusel de recomendaciones -->
+<section class="container my-5">
+  <h2 class="mb-4 text-center"> Recomendaciones</h2>
+  <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="./assets/img/DuneParte 2.jpg" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded">
+          <h5>Dune: Parte 2</h5>
+          <p>Un viaje épico por el desierto de Arrakis. Visualmente impresionante.</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="./assets/img/Everything.jpg" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded">
+          <h5>Everything Everywhere All At Once</h5>
+          <p>Una explosión creativa que desafía los géneros y la lógica.</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="./assets/img/The Whale.jpg" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded">
+          <h5>The Whale</h5>
+          <p>Un drama íntimo sobre redención y empatía. Brendan Fraser brillante.</p>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </button>
+  </div>
+</section>
+
+<!-- Sección de publicaciones -->
+<section class="container my-5" id="posts">
+  <h2 class="mb-4 text-center"> Últimos Artículos</h2>
+  <div class="row g-4">
+    
+    <!-- Post 1 -->
+    <div class="col-md-4">
+      <div class="card h-100">
+        <img src="./assets/img/renacer-F.jpg" class="card-img-top" alt="Ciencia Ficción">
+        <div class="card-body">
+          <h5 class="card-title">La Ciencia Ficción Vuelve con Fuerza</h5>
+          <p class="card-text">Con nuevas tecnologías y efectos visuales, el género se reinventa y sorprende.</p>
+          <a href="#" class="btn btn-outline-primary">Leer más...</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Post 2 -->
+    <div class="col-md-4">
+      <div class="card h-100">
+        <img src="./assets/img/pelicula-calsica.png" class="card-img-top" alt="Clásicos del cine">
+        <div class="card-body">
+          <h5 class="card-title">Películas Clásicas que No Pasan de Moda</h5>
+          <p class="card-text">Obras maestras que debes ver al menos una vez. ¿Ya las conoces?</p>
+          <a href="#" class="btn btn-outline-primary">Leer más...</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="card h-100">
+        <img src="./assets/img/marvel.jpeg" class="card-img-top" alt="Cine independiente">
+        <div class="card-body">
+          <h5 class="card-title">El Encanto del Cine Independiente</h5>
+          <p class="card-text">Propuestas originales y únicas que no encontrarás en los cines comerciales.</p>
+          <a href="#" class="btn btn-outline-primary">Leer más...</a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<div class="accordion accordion-flush" id="accordionResenas">
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#resenaUno" aria-expanded="false" aria-controls="resenaUno">
+        Reseña: El Padrino (1972)
+      </button>
+    </h2>
+    <div id="resenaUno" class="accordion-collapse collapse" data-bs-parent="#accordionResenas">
+      <div class="accordion-body">
+        <strong>Dirección:</strong> Francis Ford Coppola<br>
+        <strong>Género:</strong> Crimen, Drama<br>
+        <strong>Reseña:</strong> Un clásico del cine que explora el poder, la familia y la corrupción en el corazón de una organización mafiosa. Con actuaciones memorables y una narrativa intensa, es considerada una obra maestra.
+      </div>
+    </div>
+  </div>
+
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#resenaDos" aria-expanded="false" aria-controls="resenaDos">
+        Reseña: Interestelar (2014)
+      </button>
+    </h2>
+    <div id="resenaDos" class="accordion-collapse collapse" data-bs-parent="#accordionResenas">
+      <div class="accordion-body">
+        <strong>Dirección:</strong> Christopher Nolan<br>
+        <strong>Género:</strong> Ciencia Ficción, Aventura<br>
+        <strong>Reseña:</strong> Una epopeya espacial que mezcla la ciencia con las emociones humanas. Visualmente impresionante y con un guion que invita a la reflexión sobre el tiempo, la gravedad y el amor.
+      </div>
+    </div>
+  </div>
+
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#resenaTres" aria-expanded="false" aria-controls="resenaTres">
+        Reseña: Parasite (2019)
+      </button>
+    </h2>
+    <div id="resenaTres" class="accordion-collapse collapse" data-bs-parent="#accordionResenas">
+      <div class="accordion-body">
+        <strong>Dirección:</strong> Bong Joon-ho<br>
+        <strong>Género:</strong> Thriller, Drama Social<br>
+        <strong>Reseña:</strong> Una crítica social envolvente que mezcla el humor negro con el suspenso. Ganadora del Óscar a Mejor Película, destaca por su originalidad, guion inteligente y mensaje contundente.
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- Suscripción al boletín -->
+<section class="container my-5">
+  <div class="bg-light p-5 rounded text-center">
+    <h2>📬 ¡Suscríbete a nuestro boletín!</h2>
+    <p>Recibe cada semana las mejores reseñas y novedades del cine directamente en tu correo.</p>
+    <div class="row justify-content-center">
+      <div class="col-md-6">
+        <div class="input-group">
+          <input type="email" class="form-control" placeholder="Tu correo electrónico">
+          <button class="btn btn-danger">Suscribirme</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
     </main>
 
     <footer class="site-footer">
@@ -79,6 +225,7 @@
         <p>Contacto: <a href="mailto:contacto@falso.com">blogcinefan@gmal.com</a></p>
       </div>
     </footer>
-    
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 </html>
