@@ -1,7 +1,10 @@
-document.getElementById('formulario-contacto').addEventListener('submit', function(e) {
-    e.preventDefault(); // Evita que recargue la página
+document.getElementById("formulario-contacto").addEventListener("submit", function (e) {
+    e.preventDefault(); // Evita el envío real
+    const alerta = document.getElementById("alerta-exito");
 
-    alert("¡Tu mensaje fue enviado con éxito!\nUno de nuestros compañeros se contactará contigo pronto.");
+    // Mostrar la alerta
+    alerta.classList.remove("d-none");
 
+    // Opcional: resetear el formulario
     this.reset();
   });

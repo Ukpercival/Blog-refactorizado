@@ -1,122 +1,26 @@
-/*CSS navegacion */
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@600&display=swap');
+/* ! Estilado página de contacto */
 
-* {
-  box-sizing: border-box;
-}
-.navegacion{
-  margin-top: 80px;
-}
-
-.navbar {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  padding: 12px 30px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  z-index: 1000;
-
-  /* Fondo con imagen + color sólido */
-  background: linear-gradient(rgba(28, 28, 30, 0.9), rgba(28, 28, 30, 0.9)),
-              url('https://images.unsplash.com/photo-1508780709619-79562169bc64?auto=format&fit=crop&w=1350&q=80');
-  background-size: cover;
-  background-position: center;
-  backdrop-filter: blur(4px);
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
-}
-
-.titulo {
-  font-family: 'Inter', sans-serif;
-  color: #64ffda;
-  font-size: 28px;
-  font-weight: 600;
-  letter-spacing: 1px;
-}
-
-.nav-links {
-  list-style: none;
-  display: flex;
-  gap: 24px;
-  font-family: 'Inter', sans-serif;
-}
-
-/* Links con animación y contraste */
-.nav-links a {
-  color: #f0f0f0;
-  text-decoration: none;
-  font-weight: 500;
-  position: relative;
-  transition: color 0.3s ease;
-  padding: 4px 0;
-}
-
-.nav-links a::after {
-  content: "";
-  position: absolute;
-  width: 0%;
-  height: 2px;
-  left: 0;
-  bottom: 0;
-  background-color: #64ffda;
-  transition: width 0.3s ease;
-}
-
-.nav-links a:hover {
-  color: #64ffda;
-}
-
-.nav-links a:hover::after {
-  width: 100%;
-}
-
-/* Estilado página de contacto */
-*,
-*:before,
-*:after {
-    box-sizing: border-box;
-}
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
 body {
-    font-family: 'Inter', sans-serif;
-    line-height: 1.5;
-    color: #ffffff;
-    max-width: 0 auto;
-    margin: 0 auto;
-    padding: 40px 20px;
-    background-image: url("../img/Fondo_cine.jpeg");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-}
-
-h2 {
-
-    font-family: 'Inter', sans-serif;
-    font-size: 40px;
-    text-align: center;
-    color: #64ffda; 
-    margin-bottom: 15px;
-    text-shadow: 2px 2px 5px black;
+    font-family: 'Montserrat', sans-serif;
 }
 
 form {
-    background-color: rgba(0, 0, 0, 0.63); /* Fondo oscuro transparente */
+    font-family: 'Montserrat', sans-serif;
     border-radius: 15px;
-    box-shadow: 0 0 20px rgba(0, 204, 255, 0.7); /* Brillo rojo */
     display: grid;
     gap: 15px;
     max-width: 500px;
     margin: 0 auto;
-    padding: 30px 20px;
+    padding: 10px;
 }
 
 label {
     font-weight: bold;
     font-size: 1.1em;
     margin-bottom: 5px;
+    color: white;
 }
 
 input,
@@ -130,11 +34,22 @@ textarea {
     resize: vertical;
 }
 
+.icon-hover {
+    color: gray;
+    transition: color 0.3s ease;
+    font-size: 1.5rem;
+}
+
+.icon-hover:hover {
+    color: #6E1423;
+    cursor: pointer;
+}
+
 button {
     background-color: #64ffda; 
-    color: rgb(0, 0, 0);
+    color: black;
     padding: 12px;
-    font-size: 30 px;
+    font-size: 1.1em;
     font-family: 'Inter', sans-serif;
     border: none;
     border-radius: 8px;
@@ -144,49 +59,15 @@ button {
 
 button:hover {
     background-color: #0632aa;
+    color: white;
 }
 
-/* Estilos Footer */
-html, body {
-  margin: 0;
-  padding: 0;
-  height: 100%;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  font-size: 14px;
-  background-color: #f9f9f9;
+.btn-escribenos {
+  background-color: #02c4a4 !important; 
+  color: white !important;
+  border: none;
 }
 
-.page-container {
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
+.btn-escribenos:hover {
+  background-color: #6E1423 !important; 
 }
-
-.content {
-  flex: 1;
-}
-
-.site-footer {
-  background-color: #1e1e2f;
-  color: #ffffff;
-  padding: 0px 0;
-  text-align: center;
-  border-top: 4px solid #007acc;
-  width: 100%;
-}
-
-.site-footer a {
-  color: #66ccff;
-  text-decoration: none;
-}
-
-.site-footer ul {
-  list-style: none;
-  padding: 0;
-  margin: 10px 0;
-}
-
-.site-footer li {
-  margin: 3px 0;
-}
-
