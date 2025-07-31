@@ -1,4 +1,4 @@
-# 21.8-El-Sitio-del-Blog
+# Refactorizando el blog
 
 Grupo 7
 - Miguel Simbaqueba
